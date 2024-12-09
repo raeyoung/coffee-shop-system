@@ -1,7 +1,8 @@
 ## Coffee Shop System
 
 ### ERD 다이어그램 
-![coffe-shop-system-erd.png](..%2F..%2FDesktop%2Fcoffe-shop-system-erd.png)
+![coffe-shop-system-erd](https://github.com/user-attachments/assets/364b3d19-b898-42e3-933a-164343ad2987)
+
 
 ---
 ### 프로젝트 구조도
@@ -22,6 +23,7 @@ src
 ├── schema.sql        # 초기 테이블 스키마
 └── data.sql          # 기본 데이터
 ```
+
 
 ---
 ### 기술 스택 
