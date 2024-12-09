@@ -14,11 +14,6 @@ import java.util.List;
 public class MenuController {
     private final MenuService menuService;
 
-    // 상수 정의
-    private static final Long MENU_ID_1 = 1L;
-    private static final String MENU_NAME = "Americano";
-    private static final String API_URL = "/api/menu";
-
     public MenuController(MenuService menuService) {
         this.menuService = menuService;
     }
@@ -28,9 +23,8 @@ public class MenuController {
      * @return
      */
     @GetMapping
-    public ResponseEntity<List<MenuDto>> getMenus() {
+    public ResponseEntity<List<MenuDto>> getMenuList() {
         List<MenuDto> menus = menuService.getAllMenus();
         return ResponseEntity.ok(menus);
     }
-
 }
