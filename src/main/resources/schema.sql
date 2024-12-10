@@ -3,3 +3,8 @@ CREATE TABLE menu (
     name VARCHAR(50) NOT NULL,
     price INT NOT NULL
 );
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    points INT DEFAULT 0
+);

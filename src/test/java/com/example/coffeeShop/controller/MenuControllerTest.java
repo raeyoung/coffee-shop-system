@@ -46,7 +46,7 @@ class MenuControllerTest {
 
         mockMvc.perform(get(API_URL)    // HTTP GET 요청
                 .contentType(MediaType.APPLICATION_JSON)) // 요청 본문은 JSON 형식
-            .andExpect(status().isOk()) // HTTP 상태 코드 201 Created 확인
+            .andExpect(status().isOk()) // HTTP 상태 코드 200
             .andExpect(jsonPath("$[0].id").value(MENU_ID)) // 첫 번째 메뉴의 id 검증
             .andExpect(jsonPath("$[0].name").value(NAME)) // 첫 번째 메뉴의 name 검증
             .andExpect(jsonPath("$[0].price").value(PRICE)); // 첫 번째 메뉴의 price 검증
